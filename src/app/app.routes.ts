@@ -116,6 +116,12 @@ import { ProduccionmanualtornoComponent } from './produccion/produccionmanuales/
 import { ProduccionmanualroladoraComponent } from './produccion/produccionmanuales/produccionmanualroladora/produccionmanualroladora.component';
 import { ProduccionmanualsierracintaComponent } from './produccion/produccionmanuales/produccionmanualsierracinta/produccionmanualsierracinta.component';
 import { ProduccionmanualcortecncComponent } from './produccion/produccionmanuales/produccionmanualcortecnc/produccionmanualcortecnc.component';
+import { CompartidosComponent } from './compartidos/compartidos.component';
+import { CompartidosprocedimientosComponent } from './compartidos/compartidosprocedimientos/compartidosprocedimientos.component';
+import { CompartidosformatosComponent } from './compartidos/compartidosformatos/compartidosformatos.component';
+import { CompartidosformatosminutasComponent } from './compartidos/compartidosformatos/compartidosformatosminutas/compartidosformatosminutas.component';
+import { CompartidosformatoslistaasistenciaComponent } from './compartidos/compartidosformatos/compartidosformatoslistaasistencia/compartidosformatoslistaasistencia.component';
+import { CompartidosformatosmodificaciondocumentosComponent } from './compartidos/compartidosformatos/compartidosformatosmodificaciondocumentos/compartidosformatosmodificaciondocumentos.component';
 
 export const routes: Routes = [
     {path:'',component:HomeComponent},
@@ -276,4 +282,12 @@ export const routes: Routes = [
         {path:'produccion/manuales/manualroladora',component:ProduccionmanualroladoraComponent},
         {path:'produccion/manuales/manualsierracinta',component:ProduccionmanualsierracintaComponent},
         {path:'produccion/manuales/manualcortecnc',component:ProduccionmanualcortecncComponent},
+     // compartidos
+    {path:'compartidos',component:CompartidosComponent},
+        {path:'compartidos/procedimientos',component:CompartidosprocedimientosComponent},
+        // formatos
+        {path:'compartidos/formatos',component:CompartidosformatosComponent},
+        {path:'compartidos/formatos/minutajuntas',component:CompartidosformatosminutasComponent},
+        {path:'compartidos/formatos/listaasistencia',component:CompartidosformatoslistaasistenciaComponent},
+        {path:'compartidos/formatos/modificaciondocumentos',component:CompartidosformatosmodificaciondocumentosComponent},
 ];
