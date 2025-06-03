@@ -98,6 +98,24 @@ import { ProduccionComponent } from './produccion/produccion.component';
 import { ProduccionprocedimientosComponent } from './produccion/produccionprocedimientos/produccionprocedimientos.component';
 import { ProduccionformatosComponent } from './produccion/produccionformatos/produccionformatos.component';
 import { ProduccioninstruccionestrabajoComponent } from './produccion/produccioninstruccionestrabajo/produccioninstruccionestrabajo.component';
+import { ProduccioncnclaserComponent } from './produccion/produccioninstruccionestrabajo/produccioncnclaser/produccioncnclaser.component';
+import { ProducciondabladomaterialComponent } from './produccion/produccioninstruccionestrabajo/producciondabladomaterial/producciondabladomaterial.component';
+import { ProduccionsoldaduraComponent } from './produccion/produccioninstruccionestrabajo/produccionsoldadura/produccionsoldadura.component';
+import { ProduccionlavadomaterialComponent } from './produccion/produccioninstruccionestrabajo/produccionlavadomaterial/produccionlavadomaterial.component';
+import { ProduccionpinturaelectrostaticaComponent } from './produccion/produccioninstruccionestrabajo/produccionpinturaelectrostatica/produccionpinturaelectrostatica.component';
+import { ProduccionflejadomaterialComponent } from './produccion/produccioninstruccionestrabajo/produccionflejadomaterial/produccionflejadomaterial.component';
+import { ProduccionmutiladomaterialComponent } from './produccion/produccioninstruccionestrabajo/produccionmutiladomaterial/produccionmutiladomaterial.component';
+import { ProduccionmanualesComponent } from './produccion/produccionmanuales/produccionmanuales.component';
+import { ProduccionmanualfresadoraComponent } from './produccion/produccionmanuales/produccionmanualfresadora/produccionmanualfresadora.component';
+import { ProduccionmanualguillotinaComponent } from './produccion/produccionmanuales/produccionmanualguillotina/produccionmanualguillotina.component';
+import { ProduccionmanualkalamazooComponent } from './produccion/produccionmanuales/produccionmanualkalamazoo/produccionmanualkalamazoo.component';
+import { ProduccionmanualcortelaserComponent } from './produccion/produccionmanuales/produccionmanualcortelaser/produccionmanualcortelaser.component';
+import { ProduccionmanualpinturaelectrostaticaComponent } from './produccion/produccionmanuales/produccionmanualpinturaelectrostatica/produccionmanualpinturaelectrostatica.component';
+import { ProduccionmanualsoldaduraComponent } from './produccion/produccionmanuales/produccionmanualsoldadura/produccionmanualsoldadura.component';
+import { ProduccionmanualtornoComponent } from './produccion/produccionmanuales/produccionmanualtorno/produccionmanualtorno.component';
+import { ProduccionmanualroladoraComponent } from './produccion/produccionmanuales/produccionmanualroladora/produccionmanualroladora.component';
+import { ProduccionmanualsierracintaComponent } from './produccion/produccionmanuales/produccionmanualsierracinta/produccionmanualsierracinta.component';
+import { ProduccionmanualcortecncComponent } from './produccion/produccionmanuales/produccionmanualcortecnc/produccionmanualcortecnc.component';
 
 export const routes: Routes = [
     {path:'',component:HomeComponent},
@@ -239,5 +257,23 @@ export const routes: Routes = [
         {path:'produccion/formatos',component:ProduccionformatosComponent},
         //instrucciones de trabajo
         {path:'produccion/instruccionestrabajo',component:ProduccioninstruccionestrabajoComponent},
-
+        {path:'produccion/instruccionestrabajo/cortecnclaser',component:ProduccioncnclaserComponent},
+        {path:'produccion/instruccionestrabajo/dobladodematerial',component:ProducciondabladomaterialComponent},
+        {path:'produccion/instruccionestrabajo/soldadura',component:ProduccionsoldaduraComponent},
+        {path:'produccion/instruccionestrabajo/lavadodematerial',component:ProduccionlavadomaterialComponent},
+        {path:'produccion/instruccionestrabajo/pinturaelectrostatica',component:ProduccionpinturaelectrostaticaComponent},
+        {path:'produccion/instruccionestrabajo/flejadodematerial',component:ProduccionflejadomaterialComponent},
+        {path:'produccion/instruccionestrabajo/mutiladodepiezas',component:ProduccionmutiladomaterialComponent},
+        //manuales
+        {path:'produccion/manuales',component:ProduccionmanualesComponent},
+        {path:'produccion/manuales/manualfresadora',component:ProduccionmanualfresadoraComponent},
+        {path:'produccion/manuales/manualguillotina',component:ProduccionmanualguillotinaComponent},
+        {path:'produccion/manuales/manualkalamazoo',component:ProduccionmanualkalamazooComponent},
+        {path:'produccion/manuales/manualcortelaser',component:ProduccionmanualcortelaserComponent},
+        {path:'produccion/manuales/manualpinturaelectrostatica',component:ProduccionmanualpinturaelectrostaticaComponent},
+        {path:'produccion/manuales/manualsoldadura',component:ProduccionmanualsoldaduraComponent},
+        {path:'produccion/manuales/manualtorno',component:ProduccionmanualtornoComponent},
+        {path:'produccion/manuales/manualroladora',component:ProduccionmanualroladoraComponent},
+        {path:'produccion/manuales/manualsierracinta',component:ProduccionmanualsierracintaComponent},
+        {path:'produccion/manuales/manualcortecnc',component:ProduccionmanualcortecncComponent},
 ];
