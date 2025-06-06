@@ -9,13 +9,6 @@ import { MinutasComponent } from './direccion/formatos/minutas/minutas.component
 import { VentasComponent } from './ventas/ventas.component';
 import { ProcedimientosventasComponent } from './ventas/procedimientosventas/procedimientosventas.component';
 import { FormatosventasComponent } from './ventas/formatosventas/formatosventas.component';
-import { NecesidadesclienteComponent } from './ventas/formatosventas/necesidadescliente/necesidadescliente.component';
-import { PrecotizacionComponent } from './ventas/formatosventas/precotizacion/precotizacion.component';
-import { VentascotizacionComponent } from './ventas/formatosventas/ventascotizacion/ventascotizacion.component';
-import { ConformidadComponent } from './ventas/formatosventas/conformidad/conformidad.component';
-import { EncuestaComponent } from './ventas/formatosventas/encuesta/encuesta.component';
-import { ConfidencialidadComponent } from './ventas/formatosventas/confidencialidad/confidencialidad.component';
-import { SatisfaccionComponent } from './ventas/formatosventas/satisfaccion/satisfaccion.component';
 import { DisenoComponent } from './diseno/diseno.component';
 import { ProcedimientosdisenoComponent } from './diseno/procedimientosdiseno/procedimientosdiseno.component';
 import { FormatosdisenoComponent } from './diseno/formatosdiseno/formatosdiseno.component';
@@ -91,14 +84,11 @@ import { SgcbitacorasComponent } from './sgc/sgcbitacoras/sgcbitacoras.component
 import { AlmacenprocedimientoComponent } from './almacen/almacenprocedimiento/almacenprocedimiento.component';
 import { AlmacenformatosComponent } from './almacen/almacenformatos/almacenformatos.component';
 import { AlmaceninstruccionestrabajoComponent } from './almacen/almaceninstruccionestrabajo/almaceninstruccionestrabajo.component';
-import { AlmacenbitacoraComponent } from './almacen/almacenbitacora/almacenbitacora.component';
 import { AlmacenprocedimientoalmacenComponent } from './almacen/almacenprocedimiento/almacenprocedimientoalmacen/almacenprocedimientoalmacen.component';
 import { AlmacenformatosvaleComponent } from './almacen/almacenformatos/almacenformatosvale/almacenformatosvale.component';
 import { ProduccionComponent } from './produccion/produccion.component';
 import { ProduccionprocedimientosComponent } from './produccion/produccionprocedimientos/produccionprocedimientos.component';
-import { ProduccionformatosComponent } from './produccion/produccionformatos/produccionformatos.component';
 import { ProduccioninstruccionestrabajoComponent } from './produccion/produccioninstruccionestrabajo/produccioninstruccionestrabajo.component';
-import { ProduccioncnclaserComponent } from './produccion/produccioninstruccionestrabajo/produccioncnclaser/produccioncnclaser.component';
 import { ProducciondabladomaterialComponent } from './produccion/produccioninstruccionestrabajo/producciondabladomaterial/producciondabladomaterial.component';
 import { ProduccionsoldaduraComponent } from './produccion/produccioninstruccionestrabajo/produccionsoldadura/produccionsoldadura.component';
 import { ProduccionlavadomaterialComponent } from './produccion/produccioninstruccionestrabajo/produccionlavadomaterial/produccionlavadomaterial.component';
@@ -122,6 +112,12 @@ import { CompartidosformatosComponent } from './compartidos/compartidosformatos/
 import { CompartidosformatosminutasComponent } from './compartidos/compartidosformatos/compartidosformatosminutas/compartidosformatosminutas.component';
 import { CompartidosformatoslistaasistenciaComponent } from './compartidos/compartidosformatos/compartidosformatoslistaasistencia/compartidosformatoslistaasistencia.component';
 import { CompartidosformatosmodificaciondocumentosComponent } from './compartidos/compartidosformatos/compartidosformatosmodificaciondocumentos/compartidosformatosmodificaciondocumentos.component';
+import { VentasformatossatisfaccionComponent } from './ventas/formatosventas/ventasformatossatisfaccion/ventasformatossatisfaccion.component';
+import { VentasformatosconfidencialidadComponent } from './ventas/formatosventas/ventasformatosconfidencialidad/ventasformatosconfidencialidad.component';
+import { SgcformatosevaluacionoportunidadesComponent } from './sgc/sgcformatos/sgcformatosevaluacionoportunidades/sgcformatosevaluacionoportunidades.component';
+import { Produccioninstruccioesjfy6025Component } from './produccion/produccioninstruccionestrabajo/produccioninstruccioesjfy6025/produccioninstruccioesjfy6025.component';
+import { ProduccioninstruccioesgemaComponent } from './produccion/produccioninstruccionestrabajo/produccioninstruccioesgema/produccioninstruccioesgema.component';
+import { ProduccioninstruccioeshaasComponent } from './produccion/produccioninstruccionestrabajo/produccioninstruccioeshaas/produccioninstruccioeshaas.component';
 
 export const routes: Routes = [
     {path:'',component:HomeComponent},
@@ -142,13 +138,8 @@ export const routes: Routes = [
         {path:'ventas/procedimientos',component:ProcedimientosventasComponent},
         // formatos
         {path:'ventas/formatos',component:FormatosventasComponent},
-        {path:'ventas/formatos/necesidadescliente',component:NecesidadesclienteComponent},
-        {path:'ventas/formatos/precotizacion',component:PrecotizacionComponent},
-        {path:'ventas/formatos/cotizacion',component:VentascotizacionComponent},
-        {path:'ventas/formatos/conformidad',component:ConformidadComponent},
-        {path:'ventas/formatos/encuesta',component:EncuestaComponent},
-        {path:'ventas/formatos/confidencialidad',component:ConfidencialidadComponent},
-        {path:'ventas/formatos/satisfaccion',component:SatisfaccionComponent},
+        {path:'ventas/formatos/satisfaccion',component:VentasformatossatisfaccionComponent},
+        {path:'ventas/formatos/confidencialidad',component:VentasformatosconfidencialidadComponent},
     // diseno
     {path:'diseno',component:DisenoComponent},
         // procesos
@@ -220,6 +211,7 @@ export const routes: Routes = [
         {path:'sgc/formatos/formatoinstruccion',component:SgcformatoinstruccionComponent},
         {path:'sgc/formatos/seguimiento',component:SgcseguimientoComponent},
         {path:'sgc/formatos/riesgo',component:SgcevaluacionriesgoComponent},
+        {path:'sgc/formatos/evaluacionoportunidades',component:SgcformatosevaluacionoportunidadesComponent},
         {path:'sgc/formatos/reporteobservaciones',component:SgcreporteobservacionesComponent},
         {path:'sgc/formatos/informehallazgos',component:SgcinfomehallazgosComponent},
         {path:'sgc/formatos/objetivoscalidad',component:SgcobjetivoscalidadComponent},
@@ -252,24 +244,23 @@ export const routes: Routes = [
         {path:'almacen/formatos',component:AlmacenformatosComponent},
         {path:'almacen/formatos/valeherramienta',component:AlmacenformatosvaleComponent},
         // instrucciones de trabajo
-        {path:'almacen/instruccionestrabajo',component:AlmaceninstruccionestrabajoComponent},
-        // bitacoras
-        {path:'almacen/bitacoras',component:AlmacenbitacoraComponent},
+        {path:'almacen/instruccionestrabajo',component:AlmaceninstruccionestrabajoComponent},        
     // produccion
     {path:'produccion',component:ProduccionComponent},
         //procedimientos
         {path:'produccion/procedimientos',component:ProduccionprocedimientosComponent},
-        //formatos
-        {path:'produccion/formatos',component:ProduccionformatosComponent},
+   
         //instrucciones de trabajo
         {path:'produccion/instruccionestrabajo',component:ProduccioninstruccionestrabajoComponent},
-        {path:'produccion/instruccionestrabajo/cortecnclaser',component:ProduccioncnclaserComponent},
         {path:'produccion/instruccionestrabajo/dobladodematerial',component:ProducciondabladomaterialComponent},
         {path:'produccion/instruccionestrabajo/soldadura',component:ProduccionsoldaduraComponent},
         {path:'produccion/instruccionestrabajo/lavadodematerial',component:ProduccionlavadomaterialComponent},
         {path:'produccion/instruccionestrabajo/pinturaelectrostatica',component:ProduccionpinturaelectrostaticaComponent},
         {path:'produccion/instruccionestrabajo/flejadodematerial',component:ProduccionflejadomaterialComponent},
         {path:'produccion/instruccionestrabajo/mutiladodepiezas',component:ProduccionmutiladomaterialComponent},
+        {path:'produccion/instruccionestrabajo/jfy6025',component:Produccioninstruccioesjfy6025Component},
+        {path:'produccion/instruccionestrabajo/gema',component:ProduccioninstruccioesgemaComponent},
+        {path:'produccion/instruccionestrabajo/haas',component:ProduccioninstruccioeshaasComponent},
         //manuales
         {path:'produccion/manuales',component:ProduccionmanualesComponent},
         {path:'produccion/manuales/manualfresadora',component:ProduccionmanualfresadoraComponent},
