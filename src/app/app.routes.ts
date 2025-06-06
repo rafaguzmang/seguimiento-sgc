@@ -118,6 +118,7 @@ import { SgcformatosevaluacionoportunidadesComponent } from './sgc/sgcformatos/s
 import { Produccioninstruccioesjfy6025Component } from './produccion/produccioninstruccionestrabajo/produccioninstruccioesjfy6025/produccioninstruccioesjfy6025.component';
 import { ProduccioninstruccioesgemaComponent } from './produccion/produccioninstruccionestrabajo/produccioninstruccioesgema/produccioninstruccioesgema.component';
 import { ProduccioninstruccioeshaasComponent } from './produccion/produccioninstruccionestrabajo/produccioninstruccioeshaas/produccioninstruccioeshaas.component';
+import { Produccioninstruccioesjfyltr6032Component } from './produccion/produccioninstruccionestrabajo/produccioninstruccioesjfyltr6032/produccioninstruccioesjfyltr6032.component';
 
 export const routes: Routes = [
     {path:'',component:HomeComponent},
@@ -252,6 +253,7 @@ export const routes: Routes = [
    
         //instrucciones de trabajo
         {path:'produccion/instruccionestrabajo',component:ProduccioninstruccionestrabajoComponent},
+        {path:'produccion/instruccionestrabajo/cortejfyltr6032',component:Produccioninstruccioesjfyltr6032Component},
         {path:'produccion/instruccionestrabajo/dobladodematerial',component:ProducciondabladomaterialComponent},
         {path:'produccion/instruccionestrabajo/soldadura',component:ProduccionsoldaduraComponent},
         {path:'produccion/instruccionestrabajo/lavadodematerial',component:ProduccionlavadomaterialComponent},
